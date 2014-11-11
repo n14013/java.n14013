@@ -107,10 +107,10 @@ class Ex2_6 extends Ex{
                 Scanner stdIn = new Scanner(System.in);
 
                 System.out.print("底辺：");            // xの値の入力を促す
-                int x = stdIn.nextInt();
+                double x = stdIn.nextInt();
 
                 System.out.print("高さ：");            // yの値の入力を促す
-                int y = stdIn.nextInt();
+                double y = stdIn.nextInt();
 
                 System.out.println("面積" + (x * y / 2)); // x * yの値を表示
         }
