@@ -2,7 +2,7 @@ class Ex3{
 
 	public String ex3_0(int n){
           
-          if(n>0){
+          if (n>0){
             return "その値は正です";
           }else{
             return "その値は０か負です";
@@ -11,19 +11,20 @@ class Ex3{
 	}
 
 	public int ex3_1(int n){
-		
-		return -1;
-
 	}
 
 	public String ex3_2(int a, int b){
-
-		return "dummy";
+           
 	}
 
 	public String ex3_3(int a, int b){
-
-		return "dummy";
+          if (a < b ){
+            return b + "の方が大きいです";
+          }else if (b < a){
+            return a + "の方が大きいです";
+          }else if (a == b){
+            return "同じ値です";
+          }
 
 	}
 
