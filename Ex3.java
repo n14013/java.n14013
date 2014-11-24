@@ -98,7 +98,7 @@ class Ex3{
 	}
 
 	public int ex3_11(int a, int b, int c){
-		return 1000;
+           return 1;
 	}
 
 	public int ex3_12(int a, int b, int c){
