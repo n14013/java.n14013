@@ -29,7 +29,7 @@ class Ex3{
           if (a > b ){
            return (a + "の方が大きいです");  
           }else if (b > a){
-            return (b + "bの方が大きいです");
+            return (b + "の方が大きいです");
           }else {
             return ("同じ値です");
           }
@@ -39,10 +39,10 @@ class Ex3{
 	public String ex3_4(int a){
           if (a %  5 == 0 ){
             return "その値は5で割り切れます";
-          }else if (a < 0){
-            return "正ではない整数値です";
-          }else {
+          }else if (a % 5 > 0){
             return "その値は5で割り切れません";
+          }else {
+            return "正でない整数値です";
           }
 
 	}
@@ -70,14 +70,16 @@ class Ex3{
 	}
 
 	public String ex3_7(int a){
-          if (60 <= 69){
+          if (a >= 60 && a <= 69){
             return "可";
-          }else if (70 <= 79){
+          }else if (a >= 70 && a <= 79){
             return "良";
-          }else if (80 <= 100){
+          }else if (a >= 80 && a <= 100){
             return "優";
-          }else{
+          }else if (a >= 0 && a <= 59){
             return "不可";
+          }else{
+            return "範囲(0~100)外の値です";
           }
 	}
 
