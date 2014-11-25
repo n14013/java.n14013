@@ -37,9 +37,9 @@ class Ex3{
 	}
 
 	public String ex3_4(int a){
-          if (a %  5 == 0 ){
+          if (a %  5 == 0 && a > 0 ){
             return "その値は5で割り切れます";
-          }else if (a % 5 > 0){
+          }else if (a % 5 >= 0 && a > 0){
             return "その値は5で割り切れません";
           }else {
             return "正でない整数値です";
@@ -79,7 +79,7 @@ class Ex3{
           }else if (a >= 0 && a <= 59){
             return "不可";
           }else{
-            return "範囲(0~100)外の値です";
+            return "範囲(0～100)外の値です";
           }
 	}
 
@@ -93,7 +93,7 @@ class Ex3{
 
 	public String ex3_10(int a, int b){
           if (a - b <= 10){
-            return "それらの差は10位下です";
+            return "それらの差は10以下です";
           }else{
             return "それらの差は11以上です";
           }
