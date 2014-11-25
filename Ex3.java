@@ -92,23 +92,34 @@ class Ex3{
 	}
 
 	public String ex3_10(int a, int b){
-          if (a - b <= 10){
-            return "それらの差は10以下です";
+  if (a - b <= 10){
+    return "それらの差は10以下です";
+  }else{
+    return "それらの差は11以上です";
+  }
+}
+
+public int ex3_11(int a, int b, int c){
+   int d = Math.min(a,b);
+   return (Math.min(d,c));
+}
+
+public int ex3_12(int a, int b, int c){
+	return ((a + b + c) / 3);
+}
+
+public String ex3_13(int a){
+  if (a >= 1 && a <= 2 || a == 12){
+    return "冬";
+  }else if (a >= 3 && a <= 5){
+            return "春";
+          }else if(a >= 6 && a <= 8){
+            return "夏";
+          }else if (a >= 9 && a <= 11){
+            return "秋";
           }else{
-            return "それらの差は11以上です";
+            return "範囲(1～12)外の値です";
           }
-	}
-
-	public int ex3_11(int a, int b, int c){
-           return 1;
-	}
-
-	public int ex3_12(int a, int b, int c){
-		return 1000;
-	}
-
-	public String ex3_13(int a){
-		return "dummy";
 	}
 }
 
